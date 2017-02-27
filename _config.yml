@@ -6,7 +6,7 @@
 title: Complex Network Research Group (Murata Lab)
 email: 
 description: Common resources for Murata Lab members.
-url: https://net-titech.github.io/
+url: https://net-titech.github.io
 
 
 #
@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: Murata Laboratory
   avatar: net-logo.png
-  job: "Complex Network Research Group @ Titech"
+  job: "Complex Network @ Titech"
   bio: "Our laboratory studies behaviors and structures of complex networks."
   email:
   disqus-shortname:
