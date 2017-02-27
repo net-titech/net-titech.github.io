@@ -1,69 +1,69 @@
-title: Xu.Jian
-email: xx2610@gmail.com
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Leonids
+email:
+description: A simple and awesome blog theme powered by jekyll.
+url: # the base hostname & protocol for your site
 
-name: Xu.Jian
-Phone: 186 219 23213
-# 这两个是顶栏点击手机图标弹出的信息.
 
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-github_username:  jekyll
-
-# Build settings
-# highlighter: rouge
-markdown: kramdown
 kramdown:
-  input: GFM
-#  syntax_highlighter: rouge
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-
-
-theme: minima
-gems:
-  - jekyll-feed
-
-
-
-exclude: 
-  - node_modules 
-  - sass
-  - webpack
-  - Gemfile
-  - Gemfile.lock    
-  - webpack 
-  - .vscode
-  - jekyll-theme-CMS-2.2.2.gem
-
-
-
-# destination: public
-# 下面这步非常关键. 关系到 jekyll build. 因为node_modules文件夹的存在.会导致你本地预览 多花上30+秒.
-# 用了 src 把build 所有需要的文件 都移到src文件夹里. 再build 就会把 node_modules 排除在外了.
-source: src
-destination: _site
-
-###########################################   顶部链接 设置
-githubHomeURL:  https://github.com/Xu-Jian
-# 这个是顶部 github Home 图标的链接. 
-githubReadmeURL:  https://github.com/Xu-Jian/Xu-Jian.github.io
-
-codePen_url:  http://codepen.io/Xu-Jian/
-# 这个是顶部 codepen 图标的链接.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Leonids
+  avatar: leonids-logo.png
+  job: "A jekyll theme"
+  bio: "A simple and awesome blog theme powered by jekyll."
+  email:
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: #username
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
