@@ -1,4 +1,69 @@
-name: DopeTrope
-description: DopeTrope template for Jekyll
-paginate: 10
-baseurl: '/DopeTrope-Jekyll-Theme'
+title: Xu.Jian
+email: xx2610@gmail.com
+
+name: Xu.Jian
+Phone: 186 219 23213
+# 这两个是顶栏点击手机图标弹出的信息.
+
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username:  jekyll
+
+# Build settings
+# highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+#  syntax_highlighter: rouge
+
+
+
+theme: minima
+gems:
+  - jekyll-feed
+
+
+
+exclude: 
+  - node_modules 
+  - sass
+  - webpack
+  - Gemfile
+  - Gemfile.lock    
+  - webpack 
+  - .vscode
+  - jekyll-theme-CMS-2.2.2.gem
+
+
+
+# destination: public
+# 下面这步非常关键. 关系到 jekyll build. 因为node_modules文件夹的存在.会导致你本地预览 多花上30+秒.
+# 用了 src 把build 所有需要的文件 都移到src文件夹里. 再build 就会把 node_modules 排除在外了.
+source: src
+destination: _site
+
+###########################################   顶部链接 设置
+githubHomeURL:  https://github.com/Xu-Jian
+# 这个是顶部 github Home 图标的链接. 
+githubReadmeURL:  https://github.com/Xu-Jian/Xu-Jian.github.io
+
+codePen_url:  http://codepen.io/Xu-Jian/
+# 这个是顶部 codepen 图标的链接.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

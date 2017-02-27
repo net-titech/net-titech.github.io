@@ -1,0 +1,133 @@
+<div id="topbarDiv"> 
+  <div style="display: inline" id="topbarLeft">
+    <!-- 显隐分类栏 -->
+    <span title="显隐分类栏" style=" padding-left: 7px;">
+      <svg class="icon" aria-hidden="true" id="topbarToggle"  >
+        <use xlink:href="#icon-layouts"></use>
+      </svg>
+    </span>
+    
+    <a href="{{site.githubReadmeURL}}"  target="_blank" title="Github Readme" id="githubHome" >
+      <svg class="icon" aria-hidden="true"  >
+        <use xlink:href="#icon-Git"></use>
+      </svg> 
+    </a>
+
+    <!-- 下面是 github的Star数量. 实在是影响加载. 暂时放弃.这里只要 user 和 repo改成你自己的就可以. -->
+    <!-- 
+	    <span id="GithubStar">  
+	      <iframe src="//ghbtns.com/github-btn.html?user=Xu-Jian&repo=Xu-Jian.github.io&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="25"></iframe>
+	     
+	    </span>	      
+	  -->
+
+  </div>
+
+<!-- 
+
+  <a href="{{site.codePen_url}}" target="_blank" title="Doc 简历下载" >
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-jianli"></use>
+    </svg>     
+  </a>
+
+
+  <a href="{{site.codePen_url}}" target="_blank" title="在线简历" >  
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-jianli"></use>
+    </svg>
+  </a>
+
+
+ -->
+
+<div class="navbox">
+    <ul class="clearfix">
+      <!-- 上一篇图标 -->
+      <li style="padding-right: 15px;">
+        <a title="上一篇: (快捷键 左方向键)" id="topbarPre" >
+        <svg class="icon" aria-hidden="true"  >
+          <use xlink:href="#icon-jiantou121"></use>
+        </svg>  
+      </a>
+      </li>
+      <!-- 手机图标 -->
+      <li id="mobile">
+        <a href="#">
+          <span onclick="alert('{{site.name}}: {{site.Phone}}')" title="{{site.name}}: {{site.Phone}}" > 
+            <svg class="icon" aria-hidden="true"  >
+              <use xlink:href="#icon-shouji"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- resume 
+      <li id="resume"><a href="#">(Resume)</a>
+          <ul class="subnav">
+              <li><a href="#">完善中!</a></li>
+              <li><a href="#">简历预览</a></li>
+              <li><a href="#">简历下载</a>
+                  <ul class="threenav">
+                      <li><a href="#">DOC格式下载</a></li>
+                      <li><a href="#">PDF格式下载</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </li>
+      -->
+
+      <!-- 邮件图标 -->
+      <li id="mail">
+        <a href="mailto:{{site.email}}" target="_blank" title="E-mail Me" >    
+          <svg class="icon" aria-hidden="true"  >
+            <use xlink:href="#icon-emailround"></use>
+          </svg>
+        </a>
+      </li>
+
+      <!-- 下一篇图标 -->
+      <li style="padding-left: 15px;">
+        <a title="下一篇: (快捷键 右方向键)" id="topbarNext">
+          <svg class="icon" aria-hidden="true"  >
+            <use xlink:href="#icon-jiantou122"></use>
+          </svg>  
+        </a>
+      </li>
+  </ul>
+</div>
+
+
+  <!--
+     Codepen 图标
+  <a href="{{site.codePen_url}}" target="_blank" title="Codepen Home" >
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-codepen"></use>
+    </svg>
+  </a>
+
+    <a href="{{site.githubReadmeURL}}"  target="_blank" id="githubReadme">
+      <svg class="icon" aria-hidden="true"  >
+        <use xlink:href="#icon-Git"></use>
+      </svg>
+    </a>
+
+ -->
+
+
+
+ <div style="display: inline; " id="topbarRight" >
+    <!-- 显隐文件结构栏-->  
+    <svg class="icon" aria-hidden="true" id="topbarStructureToggle" style="float: right; padding-left: 7px; padding-right: 7px;">
+      <use xlink:href="#icon-layouts"></use>
+    </svg>
+        <!-- 捐赠图标 -->
+    <a style="line-height: 30px; float: right" id="donate">
+      <span style="display: table-cell; vertical-align: middle; font-size: 23px; transform: translate(0,8%);" 
+        title="Donate-支付宝: 186 219 23213"; onclick="alert('Donate-支付宝: 186 219 23213')">💝
+      </span>
+    </a>
+  </div>
+</div>
+
+

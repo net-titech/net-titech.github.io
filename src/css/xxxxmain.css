@@ -1,0 +1,323 @@
+*   { padding: 0; margin: 0; font-family: "Ubuntu Mono",Verdana,Arial,Helvetica,sans-serif; }
+li  { list-style: none;      }  
+a   { text-decoration: none; color:black;       } 
+sup                  { color: red; float:right; font-size:0.7em; }
+
+.active {background-color: yellow}
+#bigDiv     { height: 100%; }
+/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
+
+#arrowNav 
+{	width:90px; height:30px; position: absolute; bottom: 0px; right: 0px; }
+
+
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+
+
+#allCateTagPostBtn {padding: 0px; margin:0px }
+
+.sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
+
+
+cateDiv li { height: 25px;}
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  顶部 Flex 设置
+\*-----------------------------------*/
+
+#topbarLeft  {  flex-basis: 150px; }
+#topbarRight {  flex-basis: 150px; }
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  顶部中间 三级导航条
+\*-----------------------------------*/
+
+/*三级导航栏简介: 
+ 一级: 网页显示             → 手机 resume 邮件
+ 二级: 一级栏上鼠标悬浮显示   → 鼠标悬浮resume上: 简历预览, 简历下载
+ 三级: 二级栏上鼠标悬浮显示   → 鼠标悬浮简历下载上: DOC格式下载,PDF格式下载
+
+ <div class="navbox">
+    <ul class="clearfix">
+        <li><a href="#">左箭头图标</a></li>    
+        <li><a href="#">手机图标</a></li>
+        <li><a href="#">(Resume)</a>
+            <ul class="subnav">
+                <li><a href="#">简历预览</a></li>
+                <li><a href="#">简历下载</a>
+                    <ul class="threenav">
+                        <li><a href="#">DOC格式下载</a></li>
+                        <li><a href="#">PDF格式下载</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">邮件图标</a></li>
+        <li><a href="#">右箭头图标</a></li>        
+    </ul>
+ </div>
+*/
+
+/*一级导航栏 外观设置*/
+.navbox{ height: 30px; display: inline-block; }
+/*一级导航栏 内容外观设置: 默认列表是垂直显示的.这里用 float:left 把它弄成水平显示*/
+.navbox >ul>li{ float: left; height: 30px; line-height: 30px; text-align: center; font-size: 16px; }
+/*一级导航栏 内容默认样式+鼠标悬浮样式.*/
+.navbox ul li a{ display: block; cursor: pointer; height:30px;}
+.navbox ul li a:hover{ text-decoration: none; background: #00bfff; }
+
+/*默认隐藏二级菜单: 也就是隐藏鼠标悬浮到一级导航栏上会显示出来的内容*/
+.subnav{    display: none;}
+/*鼠标悬浮到一级导航栏上会显示二级菜单的内容, 这个关系有点复杂..大概就是如果鼠标悬浮在一级导航某项上 那么 二级菜单subnav 就显示出来 */
+.navbox ul li:hover .subnav{    display: block;}
+/* 二级菜单显示的位置. 相对于一级菜单显示*/
+subnav>li{ position: relative; }
+
+/* 三级菜单显示的位置. 相对于二级菜单显示*/
+.threenav{ position: relative; left: 100%; top: -30px; }
+.subnav, .threenav{ display: none; }
+.subnav li:hover .threenav{ display: block; }
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  滚动条设置.
+\*-----------------------------------*/
+
+  /* 强制隐藏滚动条. 不知为什么会有滚动条... */
+  html { overflow: hidden; }  
+  /* 既可以滚动 .又不显示滚动条.           */
+ #catenameUL::-webkit-scrollbar {display:none}
+  #tagnameUL::-webkit-scrollbar {display:none}
+ #filenameUL::-webkit-scrollbar {display:none}
+#rightNavbar::-webkit-scrollbar {display:none}
+#pageContent::-webkit-scrollbar {display:none}
+ #contentDiv::-webkit-scrollbar {display:none}
+ 
+#tagnameUL  {overflow-x: hidden}
+#filenameUL {overflow-x: hidden}
+
+#OuterFilenameUL {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
+
+#filenameDiSearch    { position: absolute; left:0%;   top:0; }
+#allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
+#filenameDivDate     { position: absolute; right:0%;  top:0; }
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  拖动条设置.
+\*-----------------------------------*/
+.lineFlex        { display: flex  ; height: 100%; width: 10px;}
+.lineInDiv       { flex-basis:2px ; height: 100%; background-color: gray; margin-left: auto;margin-right: auto;}
+#lineLeft        { width: 10px    ; height: 100%; cursor: col-resize }
+#lineLeft-left   { flex-basis:50% ; height: 100%; background-color: rgba(212, 117, 204, 0.53); }
+#lineLeft-right  { flex-basis:50% ; height: 100%; background-color: pink; }
+#lineRight       { width: 10px    ; height: 100%; cursor: col-resize }
+#lineRight-left  { flex-basis:50% ; height: 100%; background-color: pink; }
+#lineRight-right { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
+#lineSide        { width: 10px    ; height: 100%; cursor: col-resize ;}
+#lineSide-left   { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
+#lineSide-right  { flex-basis:50% ; height: 100%; background-color: rgba(127, 127, 127, 0.13); }
+
+
+
+
+
+
+
+
+
+
+
+
+#topbarDiv { height: 30px; display: flex; justify-content:space-between; background-color: rgba(210, 52, 219, 0.18); }
+#topbarDiv i { padding-top: 3px; padding-bottom: 3px; }
+#Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
+/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
+.cateNames, .tagNames, .postNames { padding: 2px 0;}
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  博 客 主 体
+\*-----------------------------------*/
+#cateDiv {
+	flex-basis:83px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	position: relative; background-color:rgba(92, 47, 125, 0.34); 
+    padding: 0px 4px 4px 4px;  display:relative;  }
+
+#tagDiv {
+	flex-basis:100px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 48px;
+	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
+    padding: 0px 0px 4px 4px; display:relative;                                   
+	}
+#filenameDiv {
+	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 188px;background-color:pink;
+	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                               
+	}
+
+#contentDiv { 
+	flex-grow: 1; flex-shrink: 1; padding: 5px; background-color:rgba(161, 203, 55, 0.3); 
+	flex-basis: 150px; overflow: scroll; }
+#pageContent { overflow-x: scroll; word-wrap: break-word; word-break: normal;  }
+
+
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 90px; 
+	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
+	overflow-x: hidden; overflow-y: scroll; white-space: nowrap;
+	}
+
+
+
+
+
+
+		
+
+
+
+
+/*-----------------------------------*\
+  iconfont 图标
+\*-----------------------------------*/
+.icon { width: 1em; height: 1em;fill: currentColor;overflow: hidden;font-size:25px;padding: 2.5px; }
+.iconfont{
+     font-family:"iconfont"; font-size:16px; font-style:normal;
+      -webkit-font-smoothing: antialiased; 
+      -webkit-text-stroke-width: 0.2px; 
+      -moz-osx-font-smoothing: grayscale; 
+      padding-left:20px 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	/* 小屏幕 */
+	@media all and (max-width: 1200px) {
+	
+
+
+
+
+
+	}
+
+	/* 平板 */
+	@media all and (max-width: 1024px) {
+	  
+
+
+
+
+
+	}
+
+
+
+
+
+/*-----------------------------------*\
+  移动端:  6P: 414px*736 : 只显示内容栏. 
+  cate大类宽度:88. tag标签宽度:一般屏幕-cate宽度. Post宽度:一半屏幕
+\*-----------------------------------*/
+@media screen and (max-width: 414px ) {
+
+    #cateDiv, #tagDiv     { display: none; flex-basis: 88px; }
+    .cateSup, .tagSup     { display: none                    }
+    #lineLeft, #lineRight, #lineSide     { display: none!important;     }
+    /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....--*/
+
+    #filenameDiv, #rightNavbar,#arrowNav { display: none     }
+    #donate, #githubReadme, #githubHome, #resume, #mobile, #mail, #GithubStar  { display: none     }
+
+	#filenameDivDate {  position: absolute; right: 6%; top: 0; }
+	/*-- 未知原因. 眼睛会只有半只...--*/
+
+#topbarLeft ,#topbarRight { flex-basis: 30px; }
+
+
+}
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  移 动 端:   ipad 屏幕宽度 <= 768x*1024. 
+\*-----------------------------------*/
+
+
+
+
+
+
+
+
+
+.gh-btn, .gh-count {
+  padding: 4px 4px 2px 4px;
+  height: 16px!important;
+  margin-top: 3px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+
