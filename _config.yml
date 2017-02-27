@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
+title: Complex Network Research Group (Murata Lab)
+email: *[at]net.c.titech.ac.jp
+description: Common resources for Murata Lab members.
+url: http://net-titech.github.io/
 
 
 #
@@ -14,7 +14,7 @@ url: # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Tokyo
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,37 +33,37 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  name: Murata Laboratory
+  avatar: net-logo.png
+  job: "Complex Network Research Group @ Titech"
+  bio: "Our laboratory studies behaviors and structures of complex networks."
   email:
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: 
+  facebook: 
   google:
-    plus: #username
+    plus: 
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
+  github: net-titech 
+  gitlab: 
+  stackoverflow: 
+  linkedin: 
+  skype: 
+  xing:
+  instagram: 
+  lastfm: 
+  tumblr: 
+  pinterest: 
+  foursquare: 
+  steam: 
+  dribbble: 
+  youtube: net-titech 
+  soundcloud: 
+  weibo: 
+  flickr:
+  500px: 
+  codepen:
