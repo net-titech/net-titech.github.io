@@ -8,7 +8,7 @@ pinned: true
 ---
 ## Format
 
-[paper-name].[authors].[publisher].[year] - [reader]
+[**paper-name**].[authors].[publisher].[year] - [_reader_]
 {: .notice}
 
 Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - Kaushalya
@@ -18,6 +18,6 @@ Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv
 
 ## Jan 2017
 
-Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - Kaushalya
+**Distilling the knowledge in a neural network**. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - _Kaushalya_
 {: .notice}
 
