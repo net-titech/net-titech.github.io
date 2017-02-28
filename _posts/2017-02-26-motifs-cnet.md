@@ -4,6 +4,7 @@ title: Network Motif Reading List
 excerpt: "Advances in network motif research."
 categories: [Complex Networks]
 comments: true
+share: false
 pinned: true
 ---
 ## Format
