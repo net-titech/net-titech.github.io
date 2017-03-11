@@ -23,5 +23,10 @@ Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv
 
 ## Feb 2017
 
+## Mar 2017
+
+**Sparse Convolutional Neural Networks**. Liu et al. CVPR. 2015 - _Hoang_
+{: .notice}
+
 
 
