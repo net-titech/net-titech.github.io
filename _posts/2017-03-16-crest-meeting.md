@@ -2,7 +2,7 @@
 layout: post
 title: CREST-Deep Team Meeting Rules
 excerpt: "Guidlines for CREST-Deep Meetings"
-categories: [Meeting]
+topics: [Meeting]
 comments: true
 pinned: true
 ---
