@@ -20,6 +20,7 @@ pinned: true
 > This paper is a survey on maximizing functions with submodularity. The accompanied MATLAB toolbox SFO can be downloaded from [http://mloss.org/software/view/201/](http://mloss.org/software/view/201/). (Hoang: I am interested in implementing the toolbox for Python3.)
 
 **SFO: A Toolbox for Submodular Function Optimization**. Andreas Krause. JMLR. 2010 - _Hoang_
+{: .notice}
 > This short article presents the MATLAB toolbox for submodularity optimization.
 
 
