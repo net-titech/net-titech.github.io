@@ -36,10 +36,12 @@ To compress a neural network, currently there are several approaches:
 
 **Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding**. Han et al. ICLR. 2016 - _Choong, Kaushalya_
 {: .notice}
+> The best paper award in ICLR 2016. The approach of this paper leverages on pruning, quantization and huffman coding. Source code can be found at [https://github.com/songhan/Deep-Compression-AlexNet](https://github.com/songhan/Deep-Compression-AlexNet). Note that the code only provides 'Decompression'.
 
 **Learning both Weights and Connections for Efficient
 Neural Networks**. Han et al. NIPS. 2015 - _Choong, Kaushalya_
 {: .notice}
+> This paper performs pruning when given a threshold (hyperparamter) on deciding weights that are useful or otherwise. The network is then retrained.
 
 **Sparse Convolutional Neural Networks**. Liu et al. CVPR. 2015 - _Hoang_
 {: .notice}
