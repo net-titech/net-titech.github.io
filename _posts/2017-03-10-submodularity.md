@@ -23,4 +23,6 @@ pinned: true
 {: .notice}
 > This short article presents the MATLAB toolbox for submodularity optimization.
 
-
+**Optimal Approximation for the Submodular Welfare Problem in the Value Oracle Model**. Jan Vondrak. STOC. 2008 - _Hoang_
+{: .notice}
+> Vondrak proposed to use expectation as a method to extend the discrete submodular maximization from corners of a matroid to the whole matroid polytope. Named _"extension by expectation"_, this new monotone submodular enables us to use a smooth greedy optimization process (real vectors of probabilities instead of discrete membership vectors). This technique can be applied in Submodular Welfare Problem, Separable Assignment Problem, Generalized Assignment Problem, and AdWords Assignment Problem.
