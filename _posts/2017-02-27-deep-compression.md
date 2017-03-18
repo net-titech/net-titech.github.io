@@ -23,7 +23,7 @@ To compress a neural network, currently there are several approaches:
 1. Stochastic Block Models.
 2. Tensor Factorization (incl. all decompression techniques).
 3. Determinantal Point Processes and Submodularity Models.
-4. Network Distillation (incl. prunning, fine tuning, etc.)
+4. Network Distillation and Prunning (incl. fine tuning, etc.)
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
