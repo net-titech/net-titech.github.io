@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CREST-Deep Team Meeting Rules
+title: CREST-Deep Team Meeting Protocol
 excerpt: "Guidlines for CREST-Deep Meetings"
 categories: [Meeting]
 comments: true
