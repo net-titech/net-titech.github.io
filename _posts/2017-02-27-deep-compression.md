@@ -2,7 +2,7 @@
 layout: post
 title: Deep Compression Reading List
 excerpt: "Deep neural network compression literature research organized chronologically."
-topics: [Deep Neural Networks]
+categories: [Deep Neural Networks]
 comments: true
 pinned: true
 ---

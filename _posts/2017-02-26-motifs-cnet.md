@@ -2,7 +2,7 @@
 layout: post
 title: Network Motif Reading List
 excerpt: "Advances in network motif research."
-topics: [Complex Networks]
+categories: [Complex Networks]
 comments: true
 share: false
 pinned: true

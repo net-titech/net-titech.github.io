@@ -2,7 +2,7 @@
 layout: post
 title: Submodularity in Complex Network Reading List
 excerpt: "Studies about submodularity in complex networks."
-topics: [Complex Networks]
+categories: [Complex Networks]
 comments: true
 share: false
 pinned: true
