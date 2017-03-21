@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Complex Network Research Group (Murata Lab)</title>
+    <description>Common resources for Murata Lab members.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 21 Mar 2017 19:43:30 +0900</pubDate>
+    <lastBuildDate>Tue, 21 Mar 2017 19:43:30 +0900</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>CREST-Deep Team Meeting Protocol</title>
+        <description>&lt;h1 id=&quot;crest-deep-meeting&quot;&gt;2017-03-16 / CREST-Deep Meeting&lt;/h1&gt;
+
+&lt;h2 id=&quot;meeting-format&quot;&gt;Meeting format&lt;/h2&gt;
+
+&lt;p&gt;We have decided to have a group meeting &lt;strong&gt;once per week&lt;/strong&gt; to discuss about
+new findings and research progress (flexible date). The content of each meeting 
+will be recorded as a blog post (like this one). Generally, a meeting has
+&lt;strong&gt;three sessions&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Literature update&lt;/em&gt;. Each member has 5 to 10 minutes to talk about papers
+they read within the week. We focus on the main idea only. The list of papers
+is listed &lt;a href=&quot;https://net-titech.github.io/articles/2017-02/deep-compression&quot;&gt;here&lt;/a&gt;.
+Members are also encouraged to write a short blog post for the paper that 
+they find interesting.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Reseach update&lt;/em&gt;. We present our difficulty and problems in our research
+such as implementation difficulty, new idea, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Discussion&lt;/em&gt;. We spend the last 40 minutes for solution discussion.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Generally, a meeting lasts from 1.5 to 2 hours. It is better for each member
+to have a laptop ready in the meeting.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-objective&quot;&gt;Project objective&lt;/h2&gt;
+
+&lt;p&gt;Our target for December 2017 is to develop our graph-theoric deep network
+compression technique to achieve Compression Ratio of &lt;em&gt;100&lt;/em&gt;. In this period,
+we focus on compressing the Convolutional Neural Network architecture. 
+Our top-down milestone:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dec-Nov 2017: Complete all experiments and comparisions. Finalize paper
+drafts and research proposals.&lt;/li&gt;
+  &lt;li&gt;Sep-Oct 2017: We have our COMNET benchmark fully functional. For each
+CNN architecture (mostly image recognition), we can measure their &lt;strong&gt;accuracy&lt;/strong&gt;,
+&lt;strong&gt;running memory on CPU and GPU&lt;/strong&gt;, &lt;strong&gt;storage space on disk&lt;/strong&gt;, &lt;strong&gt;training time&lt;/strong&gt;,
+and &lt;strong&gt;prediction time&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Jul-Aug 2017: Implementation of our compressing algorithm.&lt;/li&gt;
+  &lt;li&gt;May-Jun 2017: Implementation and data collection for other competing algorithms.&lt;/li&gt;
+  &lt;li&gt;April 2017: Literature research and running existing methods.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;benchmark-framework&quot;&gt;Benchmark framework&lt;/h2&gt;
+
+&lt;p&gt;In order to have a robust testing toolbox for the project, we have decided
+to make a benchmark framework in which we can compile &lt;strong&gt;Caffe models&lt;/strong&gt;, train
+them, and perform various type of measurements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Accuracy: Report accuracy on an isolated testing data. The benchmark should
+also report f1-score if the classes distribution is skewed.&lt;/li&gt;
+  &lt;li&gt;Memory: Report the memory required to run the deep model. The benchmark shoud
+be able to report memory statistics in both running case: CPU and GPU.&lt;/li&gt;
+  &lt;li&gt;Time: Report model running time and training time.&lt;/li&gt;
+  &lt;li&gt;Storage and power consumption: This feature is optional since we focus on
+the memory consumption of a model.&lt;/li&gt;
+  &lt;li&gt;Visualization: This feature is optional, check 
+&lt;a href=&quot;https://github.com/yosinski/deep-visualization-toolbox&quot;&gt;DeepVis&lt;/a&gt; for more detail.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 16 Mar 2017 00:00:00 +0900</pubDate>
+        <link>/articles/2017-03/crest-meeting</link>
+        <guid isPermaLink="true">/articles/2017-03/crest-meeting</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Submodularity in Complex Network Reading List</title>
+        <description>&lt;h2 id=&quot;format&quot;&gt;Format&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;[&lt;strong&gt;paper-name&lt;/strong&gt;].[authors].[publisher].[year] - [&lt;em&gt;reader&lt;/em&gt;]&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;We can add notices containing github link or other materials provided by the authors like this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;mar-2017&quot;&gt;Mar 2017&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Submodular Function Maximization&lt;/strong&gt;. Krause et al. 2012 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This paper is a survey on maximizing functions with submodularity. The accompanied MATLAB toolbox SFO can be downloaded from &lt;a href=&quot;http://mloss.org/software/view/201/&quot;&gt;http://mloss.org/software/view/201/&lt;/a&gt;. (Hoang: I am interested in implementing the toolbox for Python3.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;SFO: A Toolbox for Submodular Function Optimization&lt;/strong&gt;. Andreas Krause. JMLR. 2010 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This short article presents the MATLAB toolbox for submodularity optimization.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Optimal Approximation for the Submodular Welfare Problem in the Value Oracle Model&lt;/strong&gt;. Jan Vondrak. STOC. 2008 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Vondrak proposed to use expectation as a method to extend the discrete submodular maximization from corners of a matroid to the whole matroid polytope. Named &lt;em&gt;“extension by expectation”&lt;/em&gt;, this new monotone submodular enables us to use a smooth greedy optimization process (real vectors of probabilities instead of discrete membership vectors). This technique can be applied in Submodular Welfare Problem, Separable Assignment Problem, Generalized Assignment Problem, and AdWords Assignment Problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 10 Mar 2017 00:00:00 +0900</pubDate>
+        <link>/articles/2017-03/submodularity</link>
+        <guid isPermaLink="true">/articles/2017-03/submodularity</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introduction to Using Tsubame 2.5</title>
+        <description>&lt;p&gt;This post links to the instruction to use Tsubame Supercomputer
+written by &lt;a href=&quot;https://github.com/Zepx&quot;&gt;Choong Jun Jin&lt;/a&gt;. 
+Currently, the tutorial introduces how to ssh to Tsubame, setup
+the proxy for external file download, and git operations. The full wiki
+can be accessed &lt;a href=&quot;https://github.com/net-titech/tsubame/wiki&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/net-titech/tsubame/wiki/Getting-Started&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/net-titech/tsubame/wiki/Accessing-Tsubame&quot;&gt;Accessing Tsubame&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/net-titech/tsubame/wiki/External-Downloads-and-Git-Pulls&quot;&gt;Download External Files and Git Pull&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/net-titech/tsubame.wiki.git&quot;&gt;Clone this wiki locally!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 +0900</pubDate>
+        <link>/articles/2017-02/tsubame</link>
+        <guid isPermaLink="true">/articles/2017-02/tsubame</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Deep Compression Reading List</title>
+        <description>&lt;h2 id=&quot;format&quot;&gt;Format&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;[&lt;strong&gt;paper-name&lt;/strong&gt;].[authors].[publisher].[year] - [&lt;em&gt;reader&lt;/em&gt;]&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - Kaushalya&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We can add notices containing github link or other materials provided by the authors like this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;approaches&quot;&gt;Approaches&lt;/h2&gt;
+
+&lt;p&gt;To compress a neural network, currently there are several approaches:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Stochastic Block Models.&lt;/li&gt;
+  &lt;li&gt;Tensor Factorization (incl. all decompression techniques).&lt;/li&gt;
+  &lt;li&gt;Determinantal Point Processes and Submodularity Models.&lt;/li&gt;
+  &lt;li&gt;Network Distillation and Prunning (incl. fine tuning, etc.)&lt;/li&gt;
+  &lt;li&gt;Graph Embedding (incl. graph summarization).&lt;/li&gt;
+  &lt;li&gt;Small or new architectures.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;mar-2017&quot;&gt;Mar 2017&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation&lt;/strong&gt;. Paszke et al. ArXiv. 2016 - &lt;em&gt;Arie&lt;/em&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;An Analysis of Deep Neural Networks Model for Practical Applications&lt;/strong&gt;. Canziani et al. ArXiv. 2017 - &lt;em&gt;Arie&lt;/em&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Soft Weight-Sharing for Neural Network Compression&lt;/strong&gt;. Ullrich et al. ICLR. 2017 - &lt;em&gt;Choong, Kaushalya&lt;/em&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding&lt;/strong&gt;. Han et al. ICLR. 2016 - &lt;em&gt;Choong, Kaushalya&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The best paper award in ICLR 2016. The approach of this paper leverages on pruning, quantization and huffman coding. Source code can be found at &lt;a href=&quot;https://github.com/songhan/Deep-Compression-AlexNet&quot;&gt;https://github.com/songhan/Deep-Compression-AlexNet&lt;/a&gt;. Note that the code only provides ‘Decompression’.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Learning both Weights and Connections for Efficient
+Neural Networks&lt;/strong&gt;. Han et al. NIPS. 2015 - &lt;em&gt;Choong, Kaushalya&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This paper performs pruning when given a threshold (hyperparamter) on deciding weights that are useful or otherwise. The network is then retrained.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Sparse Convolutional Neural Networks&lt;/strong&gt;. Liu et al. CVPR. 2015 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;feb-2017&quot;&gt;Feb 2017&lt;/h2&gt;
+
+&lt;h2 id=&quot;jan-2017&quot;&gt;Jan 2017&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Distilling the knowledge in a neural network&lt;/strong&gt;. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - &lt;em&gt;Kaushalya&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Feb 2017 00:00:00 +0900</pubDate>
+        <link>/articles/2017-02/deep-compression</link>
+        <guid isPermaLink="true">/articles/2017-02/deep-compression</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Network Motif Reading List</title>
+        <description>&lt;h2 id=&quot;format&quot;&gt;Format&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;[&lt;strong&gt;paper-name&lt;/strong&gt;].[authors].[publisher].[year] - [&lt;em&gt;reader&lt;/em&gt;]&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;We can add notices containing github link or other materials provided by the authors like this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;jan-2017&quot;&gt;Jan 2017&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Higher-order organization of complex networks&lt;/strong&gt;. Benson et al. Science. 2016 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;More details including datasets, experiments, and discussion about motif Laplacian are provided in the supplementary materials on Science Online.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 26 Feb 2017 00:00:00 +0900</pubDate>
+        <link>/articles/2017-02/motifs-cnet</link>
+        <guid isPermaLink="true">/articles/2017-02/motifs-cnet</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

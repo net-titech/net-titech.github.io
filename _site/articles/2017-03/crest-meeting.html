@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CREST-Deep Team Meeting Protocol</title>
+  <meta name="description" content="Guidlines for CREST-Deep Meetings">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="canonical" href="/articles/2017-03/crest-meeting">
+  <link rel="alternate" type="application/rss+xml" title="Complex Network Research Group (Murata Lab)" href="/feed.xml" />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/img/net-logo.png" alt="" class="avatar">
+  
+  <a href="/" class="author_name">Murata Laboratory</a>
+  <span class="author_job">Complex Network @ Titech</span>
+  <span class="author_bio mbm">Our laboratory studies behaviors and structures of complex networks. The official website can be accessed at [net.c.titech.ac.jp]. Check the archive session for a list of all posts.</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="/">home</a>
+      </li>
+       
+      <li class="nav-item">
+        <a href="/archive/">Archive</a>
+      </li>
+          
+      <li class="nav-item">
+        <a href="/topics/">Topics</a>
+      </li>
+            
+      <li class="nav-item">
+        <a href="/tags/">Tags</a>
+      </li>
+       
+    </ul>
+  </nav>
+  <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="http://github.com/net-titech" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="https://youtube.com/user/net-titech" class="social-link-item" target="_blank"><i class="fa fa-fw fa-youtube"></i></a></li>
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <a class="btn" href= "/" >
+  Home
+</a>
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="CREST-Deep Team Meeting Protocol">CREST-Deep Team Meeting Protocol</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        16 MAR 2017
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    2 mins read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <h1 id="crest-deep-meeting">2017-03-16 / CREST-Deep Meeting</h1>
+
+<h2 id="meeting-format">Meeting format</h2>
+
+<p>We have decided to have a group meeting <strong>once per week</strong> to discuss about
+new findings and research progress (flexible date). The content of each meeting 
+will be recorded as a blog post (like this one). Generally, a meeting has
+<strong>three sessions</strong>:</p>
+
+<ol>
+  <li><em>Literature update</em>. Each member has 5 to 10 minutes to talk about papers
+they read within the week. We focus on the main idea only. The list of papers
+is listed <a href="https://net-titech.github.io/articles/2017-02/deep-compression">here</a>.
+Members are also encouraged to write a short blog post for the paper that 
+they find interesting.</li>
+  <li><em>Reseach update</em>. We present our difficulty and problems in our research
+such as implementation difficulty, new idea, etc.</li>
+  <li><em>Discussion</em>. We spend the last 40 minutes for solution discussion.</li>
+</ol>
+
+<p>Generally, a meeting lasts from 1.5 to 2 hours. It is better for each member
+to have a laptop ready in the meeting.</p>
+
+<h2 id="project-objective">Project objective</h2>
+
+<p>Our target for December 2017 is to develop our graph-theoric deep network
+compression technique to achieve Compression Ratio of <em>100</em>. In this period,
+we focus on compressing the Convolutional Neural Network architecture. 
+Our top-down milestone:</p>
+
+<ul>
+  <li>Dec-Nov 2017: Complete all experiments and comparisions. Finalize paper
+drafts and research proposals.</li>
+  <li>Sep-Oct 2017: We have our COMNET benchmark fully functional. For each
+CNN architecture (mostly image recognition), we can measure their <strong>accuracy</strong>,
+<strong>running memory on CPU and GPU</strong>, <strong>storage space on disk</strong>, <strong>training time</strong>,
+and <strong>prediction time</strong>.</li>
+  <li>Jul-Aug 2017: Implementation of our compressing algorithm.</li>
+  <li>May-Jun 2017: Implementation and data collection for other competing algorithms.</li>
+  <li>April 2017: Literature research and running existing methods.</li>
+</ul>
+
+<h2 id="benchmark-framework">Benchmark framework</h2>
+
+<p>In order to have a robust testing toolbox for the project, we have decided
+to make a benchmark framework in which we can compile <strong>Caffe models</strong>, train
+them, and perform various type of measurements:</p>
+
+<ul>
+  <li>Accuracy: Report accuracy on an isolated testing data. The benchmark should
+also report f1-score if the classes distribution is skewed.</li>
+  <li>Memory: Report the memory required to run the deep model. The benchmark shoud
+be able to report memory statistics in both running case: CPU and GPU.</li>
+  <li>Time: Report model running time and training time.</li>
+  <li>Storage and power consumption: This feature is optional since we focus on
+the memory consumption of a model.</li>
+  <li>Visualization: This feature is optional, check 
+<a href="https://github.com/yosinski/deep-visualization-toolbox">DeepVis</a> for more detail.</li>
+</ul>
+
+  </article>
+</div>
+
+<div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/articles/2017-03/crest-meeting" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/articles/2017-03/crest-meeting" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/articles/2017-03/crest-meeting" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://news.ycombinator.com/submitlink?u=/articles/2017-03/crest-meeting" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/articles/2017-03/crest-meeting" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div><!-- end share-buttons -->
+
+
+
+        <footer>
+  &copy; 2017 Murata Laboratory. Official website: <a href="www.net.c.titech.ac.jp">www.net.c.titech.ac.jp</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+</body>
+</html>

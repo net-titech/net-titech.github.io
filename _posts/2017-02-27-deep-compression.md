@@ -31,6 +31,10 @@ To compress a neural network, currently there are several approaches:
 
 ## Mar 2017
 
+**Deep Learning without Poor Local Minima**. Kenji Kawaguchi. NIPS. 2016 - _Hoang_
+{: .notice}
+> This paper is in the top 2% submissions in NIPS 2016. 
+
 **ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation**. Paszke et al. ArXiv. 2016 - _Arie_
 {: .notice}
 
