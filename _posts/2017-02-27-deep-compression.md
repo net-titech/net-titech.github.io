@@ -31,6 +31,12 @@ To compress a neural network, currently there are several approaches:
 
 ## Mar 2017
 
+**ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation**. Paszke et al. ArXiv. 2016 - _Arie_
+{: .notice}
+
+**An Analysis of Deep Neural Networks Model for Practical Applications**. Canziani et al. ArXiv. 2017 - _Arie_
+{: .notice}
+
 **Soft Weight-Sharing for Neural Network Compression**. Ullrich et al. ICLR. 2017 - _Choong, Kaushalya_
 {: .notice}
 
