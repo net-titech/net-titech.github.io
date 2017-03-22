@@ -37,6 +37,7 @@ To compress a neural network, currently there are several approaches:
 
 **ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation**. Paszke et al. ArXiv. 2016 - _Arie_
 {: .notice}
+> We can include ENet architecture for compression comparision.
 
 **An Analysis of Deep Neural Networks Model for Practical Applications**. Canziani et al. ArXiv. 2017 - _Arie_
 {: .notice}
@@ -57,8 +58,6 @@ Neural Networks**. Han et al. NIPS. 2015 - _Choong, Kaushalya_
 {: .notice}
 
 ## Feb 2017
-
-## Jan 2017
 
 **Distilling the knowledge in a neural network**. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - _Kaushalya_
 {: .notice}
