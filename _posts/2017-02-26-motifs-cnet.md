@@ -7,13 +7,8 @@ comments: true
 share: false
 pinned: true
 ---
-## Format
 
-[**paper-name**].[authors].[publisher].[year] - [_reader_]
-{: .notice}
-> We can add notices containing github link or other materials provided by the authors like this.
-
-## Jan 2017
+## <i class="fa fa-calendar"></i> Jan 2017
 
 **Higher-order organization of complex networks**. Benson et al. Science. 2016 - _Hoang_
 {: .notice}

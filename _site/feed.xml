@@ -5,8 +5,8 @@
     <description>Common resources for Murata Lab members.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Mar 2017 19:43:30 +0900</pubDate>
-    <lastBuildDate>Tue, 21 Mar 2017 19:43:30 +0900</lastBuildDate>
+    <pubDate>Wed, 22 Mar 2017 13:43:32 +0900</pubDate>
+    <lastBuildDate>Wed, 22 Mar 2017 13:43:32 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -138,17 +138,7 @@ can be accessed &lt;a href=&quot;https://github.com/net-titech/tsubame/wiki&quot
     
       <item>
         <title>Deep Compression Reading List</title>
-        <description>&lt;h2 id=&quot;format&quot;&gt;Format&lt;/h2&gt;
-
-&lt;p class=&quot;notice&quot;&gt;[&lt;strong&gt;paper-name&lt;/strong&gt;].[authors].[publisher].[year] - [&lt;em&gt;reader&lt;/em&gt;]&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - Kaushalya&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We can add notices containing github link or other materials provided by the authors like this.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;approaches&quot;&gt;Approaches&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;approaches&quot;&gt;Approaches&lt;/h2&gt;
 
 &lt;p&gt;To compress a neural network, currently there are several approaches:&lt;/p&gt;
 
@@ -161,9 +151,17 @@ can be accessed &lt;a href=&quot;https://github.com/net-titech/tsubame/wiki&quot
   &lt;li&gt;Small or new architectures.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;mar-2017&quot;&gt;Mar 2017&lt;/h2&gt;
+&lt;h2 id=&quot;i-classfa-fa-calendari-mar-2017&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt; Mar 2017&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Deep Learning without Poor Local Minima&lt;/strong&gt;. Kenji Kawaguchi. NIPS. 2016 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This paper is in the top 2% submissions in NIPS 2016.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation&lt;/strong&gt;. Paszke et al. ArXiv. 2016 - &lt;em&gt;Arie&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;We can include ENet architecture for compression comparision.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;An Analysis of Deep Neural Networks Model for Practical Applications&lt;/strong&gt;. Canziani et al. ArXiv. 2017 - &lt;em&gt;Arie&lt;/em&gt;&lt;/p&gt;
 
@@ -182,9 +180,7 @@ Neural Networks&lt;/strong&gt;. Han et al. NIPS. 2015 - &lt;em&gt;Choong, Kausha
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Sparse Convolutional Neural Networks&lt;/strong&gt;. Liu et al. CVPR. 2015 - &lt;em&gt;Hoang&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;feb-2017&quot;&gt;Feb 2017&lt;/h2&gt;
-
-&lt;h2 id=&quot;jan-2017&quot;&gt;Jan 2017&lt;/h2&gt;
+&lt;h2 id=&quot;i-classfa-fa-calendari-feb-2017&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt; Feb 2017&lt;/h2&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Distilling the knowledge in a neural network&lt;/strong&gt;. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - &lt;em&gt;Kaushalya&lt;/em&gt;&lt;/p&gt;
 </description>

@@ -7,13 +7,8 @@ comments: true
 share: false
 pinned: true
 ---
-## Format
 
-[**paper-name**].[authors].[publisher].[year] - [_reader_]
-{: .notice}
-> We can add notices containing github link or other materials provided by the authors like this.
-
-## Mar 2017
+## <i class="fa fa-calendar"></i> Mar 2017
 
 **Submodular Function Maximization**. Krause et al. 2012 - _Hoang_
 {: .notice}

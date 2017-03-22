@@ -8,15 +8,6 @@ comments: true
 pinned: true
 published: true
 ---
-## Format
-
-[**paper-name**].[authors].[publisher].[year] - [_reader_]
-{: .notice}
-
-Distilling the knowledge in a neural network. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - Kaushalya
-{: .notice}
-
-> We can add notices containing github link or other materials provided by the authors like this.
 
 ## Approaches
 
@@ -29,7 +20,7 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
-## Mar 2017
+## <i class="fa fa-calendar"></i> Mar 2017
 
 **Deep Learning without Poor Local Minima**. Kenji Kawaguchi. NIPS. 2016 - _Hoang_
 {: .notice}
@@ -57,7 +48,7 @@ Neural Networks**. Han et al. NIPS. 2015 - _Choong, Kaushalya_
 **Sparse Convolutional Neural Networks**. Liu et al. CVPR. 2015 - _Hoang_
 {: .notice}
 
-## Feb 2017
+## <i class="fa fa-calendar"></i> Feb 2017
 
 **Distilling the knowledge in a neural network**. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - _Kaushalya_
 {: .notice}
