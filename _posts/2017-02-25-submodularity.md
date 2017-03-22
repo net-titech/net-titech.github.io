@@ -6,6 +6,7 @@ categories: [Complex Networks]
 comments: true
 share: false
 pinned: true
+icon: fa-list
 ---
 
 ## <i class="fa fa-calendar"></i> Mar 2017

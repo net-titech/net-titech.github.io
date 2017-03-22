@@ -5,6 +5,7 @@ excerpt: "Guidlines for CREST-Deep Meetings"
 categories: [Meeting]
 comments: true
 pinned: true
+icon: fa-gavel
 ---
 
 # 2017-03-16 / CREST-Deep Meeting

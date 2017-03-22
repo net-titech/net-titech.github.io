@@ -7,6 +7,7 @@ categories:
 comments: true
 pinned: true
 published: true
+icon: fa-list
 ---
 
 ## Approaches
