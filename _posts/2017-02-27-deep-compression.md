@@ -23,6 +23,10 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> Mar 2017
 
+**Learning Structured Sparsity in Deep Neural Networks**. Wen et al., NIPS. 2016 - _Kaushalya_
+{: .notice}
+> This paper was [presented](http://papers.nips.cc/paper/6504-learning-structured-sparsity-in-deep-neural-networks) a poster at NIPS 2016. This paper introduces group lasso based sparsity regularization to zero out all weights in some structures (filters, channels, and layers) without a significant drop of classification accuracy. 
+
 **Deep Learning without Poor Local Minima**. Kenji Kawaguchi. NIPS. 2016 - _Hoang_
 {: .notice}
 > The author [presented](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-without-Poor-Local-Minima) his paper at NIPS 2016. This paper provides a better theoretical understanding about a *deep* neural network's loss surface.
