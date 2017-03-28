@@ -36,7 +36,7 @@ owner:
   name: Murata Laboratory
   avatar: net-logo.png
   job: "Complex Network @ Titech"
-  bio: "Our laboratory studies behaviors and structures of complex networks. The official website can be accessed at [net.c.titech.ac.jp]. Check the archive session for a list of all posts."
+  bio: "Our laboratory studies behaviors and structures of complex networks. The official website can be accessed at <a href='http://www.net.c.titech.ac.jp'>www.net.c.titech.ac.jp</a>. Check the archive session for a list of all posts."
   email:
   disqus-shortname:
   twitter: 

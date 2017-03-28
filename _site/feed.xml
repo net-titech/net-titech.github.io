@@ -5,8 +5,8 @@
     <description>Common resources for Murata Lab members.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 18:08:04 +0900</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 18:08:04 +0900</lastBuildDate>
+    <pubDate>Tue, 28 Mar 2017 18:22:31 +0900</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 18:22:31 +0900</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -15,7 +15,7 @@
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Learning Latent Block Structure in Weighted Networks&lt;/strong&gt;. Christopher Aicher et al. Journal of Complex Networks. 2015 - &lt;em&gt;Choong&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;An stochastic blockmodelling approach for weighted networks. MATLAB implementation can be found on author’s &lt;a href=&quot;http://tuvalu.santafe.edu/~aaronc/wsbm/&quot;&gt;site&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;An stochastic blockmodelling approach for weighted networks. MATLAB implementation can be found at the author’s &lt;a href=&quot;http://tuvalu.santafe.edu/~aaronc/wsbm/&quot;&gt;site&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 28 Mar 2017 00:00:00 +0900</pubDate>
