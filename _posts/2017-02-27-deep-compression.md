@@ -62,8 +62,11 @@ Neural Networks**. Han et al. NIPS. 2015 - _Choong, Kaushalya_
 **Distilling the knowledge in a neural network**. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - _Kaushalya_
 {: .notice}
 
-**BinaryConnect: Training Deep Neural Networks with binary weights during propagations**. Courbariaux et al. NIPS 2015 - _Arie_ {: .notice}
+**BinaryConnect: Training Deep Neural Networks with binary weights during propagations**. Courbariaux et al. NIPS 2015 - _Arie_ 
+{: .notice}
 
-**Binarized Neural Networks**. Hubara et al. NIPS 2016 - _Arie_ {: .notice}
+**Binarized Neural Networks**. Hubara et al. NIPS 2016 - _Arie_ 
+{: .notice}
 
-**Neural Networks with Few Multiplications**. Lin et al. ICLR 2016 - _Arie_ {: .notice}
+**Neural Networks with Few Multiplications**. Lin et al. ICLR 2016 - _Arie_ 
+{: .notice}
