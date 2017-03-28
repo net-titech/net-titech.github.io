@@ -23,9 +23,13 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> Mar 2017
 
+**CNNpack: Packing Convolutional Neural Networks in the Frequency Domain**. Yunhe Wang et al., NIPS. 2016 - _Hoang_
+{: .notice}
+> This paper applies the JPEG image compression algorithm to compress the convolutional filters of a deep convolutional neural network. The main difference between this paper and other DNN compression paper is that it uses discrete cosine transformation (DCT) as the pruning procedure (instead of threshold). The comparison in this paper is particularly bad as many other state-of-the-art algorithm are not mentioned. The author claimed 39x compression rate and 25x speed-up rate while maintaining similar top-1 and top-5 accuracy to the original networks (AlexNet). There is no github repository to be found.
+
 **Learning Structured Sparsity in Deep Neural Networks**. Wen et al., NIPS. 2016 - _Kaushalya_
 {: .notice}
-> This paper was [presented](http://papers.nips.cc/paper/6504-learning-structured-sparsity-in-deep-neural-networks) a poster at NIPS 2016. This paper introduces group lasso based sparsity regularization to zero out all weights in some structures (filters, channels, and layers) without a significant drop of classification accuracy. 
+> This paper was [presented](http://papers.nips.cc/paper/6504-learning-structured-sparsity-in-deep-neural-networks) a poster at NIPS 2016. This paper introduces group lasso based sparsity regularization to zero out all weights in some structures (filters, channels, and layers) without a significant drop of classification accuracy.
 
 **Deep Learning without Poor Local Minima**. Kenji Kawaguchi. NIPS. 2016 - _Hoang_
 {: .notice}
