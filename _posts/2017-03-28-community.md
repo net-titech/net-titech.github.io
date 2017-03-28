@@ -13,4 +13,4 @@ icon: fa-list
 
 **Learning Latent Block Structure in Weighted Networks**. Christopher Aicher et al. Journal of Complex Networks. 2015 - _Choong_
 {: .notice}
-> An stochastic blockmodelling approach for weighted networks. More to come.
+> An stochastic blockmodelling approach for weighted networks. MATLAB implementation can be found at the author's [site](http://tuvalu.santafe.edu/~aaronc/wsbm/)

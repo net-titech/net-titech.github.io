@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CREST-Deep Team Meeting Protocol</title>
-  <meta name="description" content="Guidlines for CREST-Deep Meetings">
+  <title>CREST-Deep Weekly Meeting</title>
+  <meta name="description" content="2017-03-27">
 
   <!-- CSS files -->
   <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -111,10 +111,10 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="CREST-Deep Team Meeting Protocol">CREST-Deep Team Meeting Protocol</h1>
+    <h1 title="CREST-Deep Weekly Meeting">CREST-Deep Weekly Meeting</h1>
     <span class="post-meta">
       <span class="post-date">
-        16 MAR 2017
+        27 MAR 2017
       </span>
       •
       <span class="read-time" title="Estimated read time">
@@ -129,65 +129,40 @@
   </header>
 
   <article class="post-content">
-    <h1 id="crest-deep-meeting">2017-03-16 / CREST-Deep Meeting</h1>
+    <h1 id="crest-deep-weekly-meeting">2017-03-27 / CREST-Deep Weekly Meeting</h1>
 
-<h2 id="meeting-format">Meeting format</h2>
+<h2 id="i-classfa-fa-file-texti-literature-update"><i class="fa fa-file-text"></i> Literature Update</h2>
 
-<p>We have decided to have a group meeting <strong>once per week</strong> to discuss about
-new findings and research progress (flexible date). The content of each meeting 
-will be recorded as a blog post (like this one). Generally, a meeting has
-<strong>three sessions</strong>:</p>
-
-<ol>
-  <li><em>Literature update</em>. Each member has 5 to 10 minutes to talk about papers
-they read within the week. We focus on the main idea only. The list of papers
-is listed <a href="https://net-titech.github.io/articles/2017-02/deep-compression">here</a>.
-Members are also encouraged to write a short blog post for the paper that 
-they find interesting.</li>
-  <li><em>Reseach update</em>. We present our difficulty and problems in our research
-such as implementation difficulty, new idea, etc.</li>
-  <li><em>Discussion</em>. We spend the last 40 minutes for solution discussion.</li>
-</ol>
-
-<p>Generally, a meeting lasts from 1.5 to 2 hours. It is better for each member
-to have a laptop ready in the meeting.</p>
-
-<h2 id="project-objective">Project objective</h2>
-
-<p>Our target for December 2017 is to develop our graph-theoric deep network
-compression technique to achieve Compression Ratio of <em>100</em>. In this period,
-we focus on compressing the Convolutional Neural Network architecture. 
-Our top-down milestone:</p>
+<p>In this week, we have studied several papers regarding techniques and new architectures
+for compact deep neural network (especially deep convolutional neural networks).
+The list of papers are provided <a href="https://net-titech.github.io/articles/2017-02/deep-compression">here</a>.
+We have several observations as follow:</p>
 
 <ul>
-  <li>Dec-Nov 2017: Complete all experiments and comparisions. Finalize paper
-drafts and research proposals.</li>
-  <li>Sep-Oct 2017: We have our COMNET benchmark fully functional. For each
-CNN architecture (mostly image recognition), we can measure their <strong>accuracy</strong>,
-<strong>running memory on CPU and GPU</strong>, <strong>storage space on disk</strong>, <strong>training time</strong>,
-and <strong>prediction time</strong>.</li>
-  <li>Jul-Aug 2017: Implementation of our compressing algorithm.</li>
-  <li>May-Jun 2017: Implementation and data collection for other competing algorithms.</li>
-  <li>April 2017: Literature research and running existing methods.</li>
+  <li>In the area of deep neural network <em>compression</em>, the standard procedure is: <em>pruning</em>, <em>quantization</em>, then <em>Huffman coding</em>. Although the aforementioned procedure yields good compression rate for <strong>storing</strong> a deep convolutional neural network (1/40 to 1/60), we still need to <strong>decompress</strong> a compressed model to its original size in order to run it. None of the proposed models actually run on compressed network. We believe there must be a way to run a compressed network without decompressing it.</li>
+  <li>There are some interesting neural network models applying binary weights, block dropout, and discrete cosine transformation to improve theirs speed (training/running) and compressing the model storage space.</li>
+  <li>Regarding the benchmark criteria for a deep neural network compression model, not many research actually measure the memory requirement of a DNN model in deployment. We think the exact energy consumption and memory usage of <em>each layer</em> is a very important information to measure the performance of a DNN model.</li>
+  <li>The approach from (Ullrich, 2017) read by Choong is similar to the Stochastic Block Model approach. We can generalize such approach.</li>
+  <li>Investigate the Determinantal Point Processes on graphs gives some interesting suggestions for graph sampling and neural network summarization.</li>
+  <li>SquezeNet is one of the most effective compact deep neural network. It performs particularly well in domain-specific applications. A similar (smaller or higher accuracy) architecture to SquezeNet can be developed.</li>
+  <li>Viewing a neural network as a acyclic (multi-partite) network, we can think of each output element (in an output vector) is the result of computation along many <em>paths</em>. This view yields some insight about a deep neural network (Kawaguchi, 2016), and also inspired for some other representation of a deep neural network using only one distribution and one matrix.</li>
 </ul>
 
-<h2 id="benchmark-framework">Benchmark framework</h2>
+<h2 id="i-classfa-fa-flaski-research-update"><i class="fa fa-flask"></i> Research Update</h2>
 
-<p>In order to have a robust testing toolbox for the project, we have decided
-to make a benchmark framework in which we can compile <strong>Caffe models</strong>, train
-them, and perform various type of measurements:</p>
+<p>We have run several DNN compression benchmark provided by (Han, 2016) and (Ullrich, 2017) to recreate their results. As mentioned in the previous session, these models compress the network in term of storage space, not running memory space. On the other hand, we have set up Caffe environment on the new machine (titan-x) and downloaded the full size ImageNet.</p>
+
+<h2 id="i-classfa-fa-bullseyei-next-week-objectives"><i class="fa fa-bullseye"></i> Next Week Objectives</h2>
+
+<p>We have one presentation on April 4th in the meeting with other labs. The content of this presentation is as follow:</p>
 
 <ul>
-  <li>Accuracy: Report accuracy on an isolated testing data. The benchmark should
-also report f1-score if the classes distribution is skewed.</li>
-  <li>Memory: Report the memory required to run the deep model. The benchmark shoud
-be able to report memory statistics in both running case: CPU and GPU.</li>
-  <li>Time: Report model running time and training time.</li>
-  <li>Storage and power consumption: This feature is optional since we focus on
-the memory consumption of a model.</li>
-  <li>Visualization: This feature is optional, check 
-<a href="https://github.com/yosinski/deep-visualization-toolbox">DeepVis</a> for more detail.</li>
+  <li>Present the current situation of deep model compression. (state of the art algorithms and their limitations)</li>
+  <li>Present our complex network approaches (Filter compression, DPP, SBM, Submodularity, Network summarization).</li>
+  <li>Discuss about the domain-specific constrain.</li>
 </ul>
+
+<p>On the other hand, we will keep exploring and comparing other algorithms and start the benchmark implementation.</p>
 
   </article>
 </div>
