@@ -25,7 +25,7 @@ To compress a neural network, currently there are several approaches:
 
 **Dynamic Network Surgery for Efficient DNNs**. Guo et al., NIPS. 2016 - _Kaushalya_
 {: .notice}
-> This paper was [presented](https://papers.nips.cc/paper/6165-dynamic-network-surgery-for-efficient-dnns) as a poster at NIPS 2016. Two operations: pruning and splicing (recovery of pruned connections) are performed in a continuous manner. Connections are pruned based on the magnitude of their weights. 
+> This paper was [presented](https://papers.nips.cc/paper/6165-dynamic-network-surgery-for-efficient-dnns) as a poster at NIPS 2016. Two operations: pruning and splicing (recovery of pruned connections) are performed in a continuous manner. Connections are pruned based on the magnitude of their weights. Authors claim a 17.7X compression rate for AlexNet.
 
 **Compressing Convolutional Neural Networks in the Frequency Domain**. Chen et al., KDD. 2016 - _Hoang_
 {: .notice}
