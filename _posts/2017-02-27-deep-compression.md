@@ -25,11 +25,11 @@ To compress a neural network, currently there are several approaches:
 
 **Compressing Convolutional Neural Networks in the Frequency Domain**. Chen et al., KDD. 2016 - _Hoang_
 {: .notice}
-> This paper employs the DCT transformation and hashing trick to compress a convolutional neural network. The content of (Wang, 2016) is quite similar to this paper. Note: KDD'16 notification is in August, while NIPS'16 is in December.
+> This paper employs the DCT transformation and hashing trick to compress a convolutional neural network. The content of (Wang, 2016) is quite similar to this paper. Note: KDD'16 is in August, while NIPS'16 is in December.
 
 **CNNpack: Packing Convolutional Neural Networks in the Frequency Domain**. Yunhe Wang et al., NIPS. 2016 - _Hoang_
 {: .notice}
-> This paper applies the JPEG image compression algorithm to compress the convolutional filters of a deep convolutional neural network. The main difference between this paper and other DNN compression paper is that it uses discrete cosine transformation (DCT) as the pruning procedure (instead of threshold). The comparison in this paper is particularly bad as many other state-of-the-art algorithm are not mentioned. The author claimed 39x compression rate and 25x speed-up rate while maintaining similar top-1 and top-5 accuracy to the original networks (AlexNet). There is no github repository to be found.
+> This paper applies the JPEG image compression algorithm to compress the convolutional filters of a deep convolutional neural network. The main difference between this paper and other DNN compression paper is that it uses discrete cosine transformation (DCT) as the pruning procedure (instead of threshold). The comparison in this paper is particularly bad as many other state-of-the-art algorithms are not mentioned. The author claimed 39x compression rate and 25x speed-up rate while maintaining similar top-1 and top-5 accuracy to the original networks (AlexNet). There is no github repository to be found.
 
 **Learning Structured Sparsity in Deep Neural Networks**. Wen et al., NIPS. 2016 - _Kaushalya_
 {: .notice}
@@ -66,11 +66,11 @@ Neural Networks**. Han et al. NIPS. 2015 - _Choong, Kaushalya_
 **Distilling the knowledge in a neural network**. Hinton et al. arXiv preprint arXiv:1503.02531. 2015 - _Kaushalya_
 {: .notice}
 
-**BinaryConnect: Training Deep Neural Networks with binary weights during propagations**. Courbariaux et al. NIPS 2015 - _Arie_ 
+**BinaryConnect: Training Deep Neural Networks with binary weights during propagations**. Courbariaux et al. NIPS 2015 - _Arie_
 {: .notice}
 
-**Binarized Neural Networks**. Hubara et al. NIPS 2016 - _Arie_ 
+**Binarized Neural Networks**. Hubara et al. NIPS 2016 - _Arie_
 {: .notice}
 
-**Neural Networks with Few Multiplications**. Lin et al. ICLR 2016 - _Arie_ 
+**Neural Networks with Few Multiplications**. Lin et al. ICLR 2016 - _Arie_
 {: .notice}
