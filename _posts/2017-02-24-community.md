@@ -9,7 +9,7 @@ pinned: true
 icon: fa-list
 ---
 
-## <i class="fa fa-calendar"></i> Mar 2017
+## <i class="fa fa-calendar"></i> Feb 2017
 
 **Learning Latent Block Structure in Weighted Networks**. Christopher Aicher et al. Journal of Complex Networks. 2015 - _Choong_
 {: .notice}

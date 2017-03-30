@@ -89,6 +89,6 @@ ENV/
 .ropeproject
 
 # Ignore build folders
-_site/*
-.sass*
+_site/
+.sass-cache/
 .jekyll-metadata
