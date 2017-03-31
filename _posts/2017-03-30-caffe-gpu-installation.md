@@ -155,7 +155,7 @@ correct.
 - After `make distribute` succeed, include the folder `caffe/python/` into
 `PYTHONPATH` to use with Python. Install related python packages: `sudo pip install protobuf scikit-image`.  
 
-## <i class="fa fa-fw binoculars"></i> References
+## <i class="fa fa-fw fa-binoculars"></i> References
 
 1. http://christopher5106.github.io/big/data/2015/07/16/deep-learning-install-caffe-cudnn-cuda-for-digits-python-on-ubuntu-14-04.html
 
