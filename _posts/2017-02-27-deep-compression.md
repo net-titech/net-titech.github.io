@@ -33,7 +33,7 @@ To compress a neural network, currently there are several approaches:
 
 **CNNpack: Packing Convolutional Neural Networks in the Frequency Domain**. Yunhe Wang et al., NIPS. 2016 - _Hoang_
 {: .notice}
-> This paper applies the JPEG image compression algorithm to compress the convolutional filters of a deep convolutional neural network. The main difference between this paper and other DNN compression paper is that it uses discrete cosine transformation (DCT) as the pruning procedure (instead of threshold). The comparison in this paper is particularly bad as many other state-of-the-art algorithms are not mentioned. The author claimed 39x compression rate and 25x speed-up rate while maintaining similar top-1 and top-5 accuracy to the original networks (AlexNet). There is no github repository to be found.
+> This paper applies the JPEG image compression algorithm to compress the convolutional filters of a deep convolutional neural network. The main difference between this paper and other DNN compression paper is that it uses discrete cosine transformation (DCT) as the pruning procedure (instead of threshold). The author claimed 39x compression rate and 25x speed-up rate while maintaining similar top-1 and top-5 accuracy to the original networks (AlexNet). Also, the author stated that the speed of convolution operation can be improved in the frequency domain. This paper also addressed the problem of memory saving in neural network compression. There is no github repository to be found.
 
 **Learning Structured Sparsity in Deep Neural Networks**. Wen et al., NIPS. 2016 - _Kaushalya_
 {: .notice}
