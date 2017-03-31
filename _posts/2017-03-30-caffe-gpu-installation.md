@@ -67,7 +67,7 @@ sudo apt-get install libatlas-base-dev
 sudo apt-get install --no-install-recommends libboost-all-dev
 sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 sudo apt-get install python-dev  # Python 2.7
-sudo apt-get install python-numpy python-scipy python-pip protobuf scikit-image
+sudo apt-get install python-numpy python-scipy python-pip
 sudo apt-get install libopencv-dev
 ```
 We build `protobuf-3.2.0` from
@@ -153,7 +153,7 @@ are missing. Install `python-pip` and use `sudo pip install <missing_component>`
 to fix. Also check `PYTHON_INCLUDE` in `Makefile.config` to see if all paths is
 correct.
 - After `make distribute` succeed, include the folder `caffe/python/` into
-`PYTHONPATH` to use with Python.
+`PYTHONPATH` to use with Python. Install related python packages: `sudo pip install protobuf scikit-image`.  
 
 ## <i class="fa fa-fw binoculars"></i> References
 
