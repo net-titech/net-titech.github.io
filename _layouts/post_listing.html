@@ -13,7 +13,6 @@ layout: default
           </span>
           -->
           {% if post.categories.size > 0 %}
-          •
           {% for cat in post.categories %}
             <a class="post-cat" href="{{ site.url }}/topics/#{{ cat }}">{{ cat }}</a>
             {% unless forloop.last %}
