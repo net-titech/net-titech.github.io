@@ -10,7 +10,8 @@ icon: fa-gavel
 
 ## <i class="fa fa-group"></i> CREST-Deep Meetings
 
-- [2017-03-27](https://net-titech.github.io/articles/2017-03/crest-meeting): Complex Network Approaches Discussion (toward April 4th presentation).
+- 2017-03-30: Short meeting on the organization of April 4th presentation.
+- [2017-03-27](https://net-titech.github.io/articles/2017-03/crest-meeting): Deep compression approaches discussion (toward April 4th presentation).
 - [2017-03-16](https://net-titech.github.io/articles/2017-03/crest-meeting-protocol): Planning and decide meeting protocol.
 
 ## <i class="fa fa-wpforms"></i> Meeting format
