@@ -8,19 +8,22 @@ pinned: true
 icon: fa-gavel
 ---
 
-# 2017-03-16 / CREST-Deep Meeting
+## <i class="fa fa-group"></i> CREST-Deep Meetings
 
-## Meeting format
+- [2017-03-27](https://net-titech.github.io/articles/2017-03/crest-meeting): Complex Network Approaches Discussion (toward April 4th presentation).
+- [2017-03-16](https://net-titech.github.io/articles/2017-03/crest-meeting-protocol): Planning and decide meeting protocol.
+
+## <i class="fa fa-wpforms"></i> Meeting format
 
 We have decided to have a group meeting **once per week** to discuss about
-new findings and research progress (flexible date). The content of each meeting 
+new findings and research progress (flexible date). The content of each meeting
 will be recorded as a blog post (like this one). Generally, a meeting has
 **three sessions**:
 
 1. *Literature update*. Each member has 5 to 10 minutes to talk about papers
 they read within the week. We focus on the main idea only. The list of papers
 is listed [here](https://net-titech.github.io/articles/2017-02/deep-compression).
-Members are also encouraged to write a short blog post for the paper that 
+Members are also encouraged to write a short blog post for the paper that
 they find interesting.
 2. *Reseach update*. We present our difficulty and problems in our research
 such as implementation difficulty, new idea, etc.
@@ -29,11 +32,11 @@ such as implementation difficulty, new idea, etc.
 Generally, a meeting lasts from 1.5 to 2 hours. It is better for each member
 to have a laptop ready in the meeting.
 
-## Project objective
+## <i class="fa fa-bullseye"></i> Project objective
 
 Our target for December 2017 is to develop our graph-theoric deep network
 compression technique to achieve Compression Ratio of *100*. In this period,
-we focus on compressing the Convolutional Neural Network architecture. 
+we focus on compressing the Convolutional Neural Network architecture.
 Our top-down milestone:
 
 - Dec-Nov 2017: Complete all experiments and comparisions. Finalize paper
@@ -46,7 +49,7 @@ and **prediction time**.
 - May-Jun 2017: Implementation and data collection for other competing algorithms.
 - April 2017: Literature research and running existing methods.
 
-## Benchmark framework
+## <i class="fa fa-tachometer"></i> Benchmark framework
 
 In order to have a robust testing toolbox for the project, we have decided
 to make a benchmark framework in which we can compile **Caffe models**, train
@@ -59,5 +62,5 @@ be able to report memory statistics in both running case: CPU and GPU.
 - Time: Report model running time and training time.
 - Storage and power consumption: This feature is optional since we focus on
 the memory consumption of a model.
-- Visualization: This feature is optional, check 
+- Visualization: This feature is optional, check
 [DeepVis](https://github.com/yosinski/deep-visualization-toolbox) for more detail.
