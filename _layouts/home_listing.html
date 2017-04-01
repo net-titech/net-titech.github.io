@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h1> Pinned Posts </h1>
+
 {% for post in site.posts %}
   {% if post.pinned %}
     <section class="post">
@@ -31,15 +33,15 @@ layout: default
           <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
           {% endif %}
         </h4>
-    
+
         {% if post.author %}
           {% assign author = site.data.authors[post.author] %}
         {% else %}
           {% assign author = site.owner %}
         {% endif %}
-    
+
         </header>
-    
+
         {% if post.image.feature %}
         <div class="post-image-feature">
           <img src=
@@ -49,13 +51,13 @@ layout: default
           "{{ site.url }}/img/{{ post.image.feature }}"
           {% endif %}
           alt="{{ post.title }} feature image">
-    
+
           {% if post.image.credit %}
           <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
           {% endif %}
         </div><!-- /.image-wrap -->
         {% endif %}
-    
+
     </section>
   {% endif %}
 {% endfor %}
