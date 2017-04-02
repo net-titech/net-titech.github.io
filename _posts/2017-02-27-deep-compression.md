@@ -23,7 +23,7 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> Mar 2017
 
-**Towards Convolutional Neural Networks Compression via Global Error Reconstruction **. Lin et al., IJCAI. 2016 - _Arie_
+**Towards Convolutional Neural Networks Compression via Global Error Reconstruction**. Lin et al., IJCAI. 2016 - _Arie_
 {: .notice}
 > This paper proposed 2 compression steps: First, utilized SVD-based Low-Rank Approximation to compress the parameters in fully connected layer (layer wise). Then, make a cross-layer compression via back-propagation by minimizing the reconstruction error between the outputs of both the original and the compressed.
 
