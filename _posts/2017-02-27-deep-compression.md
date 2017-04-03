@@ -21,6 +21,8 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
+## <i class="fa fa-calendar"></i> Apr 2017
+
 ## <i class="fa fa-calendar"></i> Mar 2017
 
 **Towards Convolutional Neural Networks Compression via Global Error Reconstruction**. Lin et al., IJCAI. 2016 - _Arie_
