@@ -27,6 +27,11 @@ To compress a neural network, currently there are several approaches:
 {: .notice}
 > This paper addressed the storage, train time and runtime complexity. Based on the network distillation idea by Hinton et al (NIPS 2014 Workshop). Two main ideas: First, Training shallow neural networks (called the student nets) to mimic trained deep neural nets (called the teacher nets) using logit regression; Second, the student can learn from multiple teachers using noise-based regularization.
 
+
+**Do Deep Nets Really Need to be Deep?**. Ba & Caruana. NIPS. 2014 - _Arie_
+{: .notice}
+> This paper proposed teacher-student strategy: shallow neural networks learn from deeper nets and achieve similar accuracy. The shallower nets mimicking the deeper ones based on the [Model Compression](http://dl.acm.org/citation.cfm?id=1150464). The steps are: Mimic learning via L2 regression on logits, then using a linear bottleneck layer to speed up training. 
+
 ## <i class="fa fa-calendar"></i> Mar 2017
 
 **Towards Convolutional Neural Networks Compression via Global Error Reconstruction**. Lin et al., IJCAI. 2016 - _Arie_
