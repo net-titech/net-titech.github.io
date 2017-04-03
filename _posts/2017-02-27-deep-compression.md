@@ -23,6 +23,10 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> Apr 2017
 
+**Deep Model Compression: Distilling Knowledge from Noisy Teachers**. Sau & Balasubramanian. ArXiv. 2016 - _Arie_
+{: .notice}
+> This paper addressed the storage, train time and runtime complexity. Based on the network distillation idea by Hinton et al (NIPS 2014 Workshop). Two main ideas: First, Training shallow neural networks (called the student nets) to mimic trained deep neural nets (called the teacher nets) using logit regression; Second, the student can learn from multiple teachers using noise-based regularization.
+
 ## <i class="fa fa-calendar"></i> Mar 2017
 
 **Towards Convolutional Neural Networks Compression via Global Error Reconstruction**. Lin et al., IJCAI. 2016 - _Arie_
