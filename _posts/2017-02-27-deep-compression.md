@@ -23,6 +23,10 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> Apr 2017
 
+**MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications**. Howard et al. (Google Inc.) Arxiv preprint [27th April 2017] - _Kaushalya_
+{: .notice}
+> This paper introduces a smaller and faster convolutional neural network achitecture by replacing convolutions by depthwise separable convolutions and a 1x1 pointwise convolution to combine the outputs of depthwise convolutions. Additionally this paper introduces two more parameters, width multiplier and resolution multiplier to reduce the number of hyperparameters further.      
+
 **Deep Model Compression: Distilling Knowledge from Noisy Teachers**. Sau & Balasubramanian. ArXiv. 2016 - _Arie_
 {: .notice}
 > This paper addressed the storage, train time and runtime complexity. Based on the network distillation idea by Hinton et al (NIPS 2014 Workshop). Two main ideas: First, Training shallow neural networks (called the student nets) to mimic trained deep neural nets (called the teacher nets) using logit regression; Second, the student can learn from multiple teachers using noise-based regularization.
