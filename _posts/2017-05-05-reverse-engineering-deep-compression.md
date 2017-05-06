@@ -33,6 +33,7 @@ for each non-zero elements in the weight matrix, and `ind_stream` contains the
 index for each non-zero elements.
 
 ![Binary file](https://net-titech.github.io/img/deep-compression-hans-compressed-file.svg)
+{:.width="50%"}
 
 In the figure above, each part name is given corresponding to the naming in
 the provided `decode.py` file. Below the name is the size of the array (we will
