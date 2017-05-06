@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep compression case study
+title: Deep compression case study - AlexNet
 excerpt: "Reverse engineering Song Hans' compressed AlexNet"
 categories: [Tutorials]
 comments: true
