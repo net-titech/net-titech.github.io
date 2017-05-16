@@ -32,7 +32,7 @@ values (no compressing for bias), `spm_stream` contains the integer encoding
 for each non-zero elements in the weight matrix, and `ind_stream` contains the
 index for each non-zero elements.
 
-![Binary file](https://net-titech.github.io/img/deep-compression-hans-compressed-file.svg){: width="50%"}
+![Binary file]({{base.siteurl}}/img/han_compressed_structure.png){: width="80%"}
 
 In the figure above, each part name is given corresponding to the naming in
 the provided `decode.py` file. Below the name is the size of the array (we will
@@ -49,8 +49,8 @@ decompression code, this array is named `nz_num`.
 layers = ['conv1', 'conv2', 'conv3', 'conv4', 'conv5', 'fc6', 'fc7', 'fc8']
 # Get 8 uint32 values from fin (AlexNet_compressed)
 nz_num = np.fromfile(fin, dtype = np.uint32, count = len(layers))
-nz_num = array([29388, 118492, 309138, 247913, 163904, 4665474, 1959380,
-                1061645], dtype=uint32)
+nz_num = array([29388, 118492, 309138, 247913, 163904, 4665474, 1959380, 1061645],
+                dtype=uint32)
 ```
 
 ## Compressed data for each layer
