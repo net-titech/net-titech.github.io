@@ -67,3 +67,6 @@ owner:
   flickr:
   500px: 
   codepen:
+
+gems:
+    - jekyll-redirect-from

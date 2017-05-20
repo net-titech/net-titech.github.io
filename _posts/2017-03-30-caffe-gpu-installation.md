@@ -155,6 +155,8 @@ correct.
 - After `make distribute` succeed, include the folder `caffe/python/` into
 `PYTHONPATH` to use with Python. Install related python packages: `sudo pip install protobuf scikit-image`.
 - If you are using caffe in Anaconda python, it is possible to encounter `lib/libgomp.so.1: version 'GOMP_4.0' not found` error. This can be fixed by copying `libgomp.so.1.0.0` library of the system (found in /usr/lib/x86_64-linux-gn) into the anaconda packages library (eg: anaconda3/pkgs/libgcc-5.2.0-0/lib/).  
+- If you encounter `undefined reference to TIFFReadRGBAStrip@LIBTIFF_4.0` error and you have anaconda installed, remove the libtiff library from Anaconda.
+`conda remove libtiff`
 
 ## <i class="fa fa-fw fa-binoculars"></i> References
 

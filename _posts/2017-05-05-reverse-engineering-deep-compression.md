@@ -1,4 +1,5 @@
 ---
+redirect_from: "/articles/2017-05/reverse-engineering-deep-compressions"
 layout: post
 title: Deep compression case study - AlexNet
 excerpt: "Reverse engineering Song Hans' compressed AlexNet"
