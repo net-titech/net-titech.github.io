@@ -21,6 +21,12 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
+## <i class="fa fa-calendar"></i> May 2017
+
+**Overcoming challenges in fixed point training of deep convolutional networks.** Lin, Darryl D., and Sachin S. Talathi. (Qualcomm Research) arXiv preprint arXiv:1607.02241 (2016). - _Kaushalya_
+{: .notice}
+> The stochastic gradient algorithm becomes unstable when the weights and activations are constrained to a limited numerical precision, due to the presence of noisy gradient updates. This paper proposes iterative fine-tuning of bottom-to-top layers as a method to alleviate the instability in SGD training.  
+
 ## <i class="fa fa-calendar"></i> Apr 2017
 
 **MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications**. Howard et al. (Google Inc.) Arxiv preprint [27th April 2017] - _Kaushalya_
