@@ -10,6 +10,10 @@ icon: fa-gavel
 
 ## <i class="fa fa-group"></i> CREST-Deep Meetings
 
+- [2017-05-26](https://net-titech.github.io/articles/2017-05/lowrank-approx-meeting):
+Meeting with Yokota lab on the topic of low-rank approximation.
+- [2017-05-19](https://net-titech.github.io/articles/2017-05/crest-meeting-may1):
+Discuss plan for May and June research. Develop Mobile-Net framework.
 - [2017-04-07](https://net-titech.github.io/articles/2017-04/crest-meeting-apr1): Discuss plan for April research.
 - 2017-03-30: Short meeting on the organization of April 4th presentation.
 - [2017-03-27](https://net-titech.github.io/articles/2017-03/crest-meeting): Deep compression approaches discussion (toward April 4th presentation).
