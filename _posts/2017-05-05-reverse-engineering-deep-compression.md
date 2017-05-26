@@ -6,7 +6,6 @@ excerpt: "Reverse engineering Song Hans' compressed AlexNet"
 categories: [Tutorials]
 comments: true
 ---
-
 In this post, we study the result of Song Hans' work on AlexNet. Since the
 encrypting code is not provided, we analyze the decompression code provided
 on the author's
@@ -33,7 +32,7 @@ values (no compressing for bias), `spm_stream` contains the integer encoding
 for each non-zero elements in the weight matrix, and `ind_stream` contains the
 index for each non-zero elements.
 
-![Binary file]({{base.siteurl}}/img/han_compressed_structure.png){: width="80%"}
+![Binary file]({{site.baseurl}}/img/han_compressed_structure.png)
 
 In the figure above, each part name is given corresponding to the naming in
 the provided `decode.py` file. Below the name is the size of the array (we will
@@ -153,13 +152,36 @@ multiple running streams of zeros.
 
 ## Discussion
 
-In this compression scheme, there are several interesting points to discuss:
+Taking a look at the weight value distribution of each layers gives some insight
+about the design decision for the compressed file. (For more layer encoding and
+clustering: [weight-clustering-notebook](https://github.com/net-titech/CREST-Deep-M/blob/master/notebooks/weight-clustering.ipynb))
+
+![Violin]({{site.baseurl}}/img/alexnet-weights-violin-plot.bin)
+
+The first thing we can observe here is the difference between the standard
+deviation of convolutional layers (`conv`) versus fully connected layers (`fc`).
+Moreover, the value ranges of convolutional layers are also much larger than
+that of fully connected layers. This observation suggests that we need to have
+a "finer" quantization for convolutional layers. As it turned out, to preserve
+the accuracy, we need to quantize the weights of a convolutional layer by 256 values;
+but we only need 16 discrete values for a fully connected to preserve the accuracy.
+This design decision is good for two reasons:
+1. Larger coverage for convolutional layers. These layers are small in size (less than
+a million parameter each) so we can afford to encode them using 8-bits (256 values).
+2. Save storage space for fully connected layers. Since a fully connected layer has
+up to 25 millions parameter, storing each value as a 4-bits value greatly helped
+to compress the size.
+
+In a note on this compression scheme, there are several interesting points to discuss:
 
 - Pruning parameter. We do not know the pruning threshold and the number of
-pruning-retraining processes.
+pruning-retraining processes. We are implementing our own pruning-clustering
+and codebook-training on Caffe.
 - The sensitivity of quantization to the convolutional kernels. It seems that
 fully connected layers are more robust to quantization (limited number of
-distinct values than the convolutional kernels).
+distinct values than the convolutional kernels). We need to study the robustness
+of the pruning and quantization process with respect to the number of discrete values
+and the sensitivity of the values in codebook to the extracted model's accuracy.
 - The main storage lies at `ind_stream` (non-zero index) and `spm_stream`
 (look-up keys for real values in `codebook`). Can we further compress these
 data? One idea is to short the `codebook` such that the key values preserve
