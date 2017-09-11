@@ -21,6 +21,12 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
+## <i class="fa fa-calendar"></i> September 2017
+
+**Understanding Deep Learning Requires Re-Thinking Generalization** Chiyuan Zhang et al. ICLR 2017 - _Hoang_
+{: .notice}
+> Experimental results and insight for generalization error in deep neural networks.
+
 ## <i class="fa fa-calendar"></i> May 2017
 
 **Overcoming challenges in fixed point training of deep convolutional networks.** Lin, Darryl D., and Sachin S. Talathi. (Qualcomm Research) arXiv preprint arXiv:1607.02241 (2016). - _Kaushalya_
