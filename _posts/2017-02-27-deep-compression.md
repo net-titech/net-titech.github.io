@@ -23,9 +23,35 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> September 2017
 
-**Understanding Deep Learning Requires Re-Thinking Generalization** Chiyuan Zhang et al. ICLR 2017 - _Hoang_
+**Understanding Deep Learning Requires Re-Thinking Generalization** Chiyuan Zhang et al. ICLR 2016 - _Hoang_
 {: .notice}
 > Experimental results and insight for generalization error in deep neural networks.
+The results from this paper suggested that we can train a neural network with
+noise (input noise and/or label noise) and still obtain an extremely high accuracy
+on the training set. The paper (kind of) criticizes the missuse the term 
+"regularization" in the deep neural network literature. Experimental results (in this
+paper) showed that although regularization techniques can help with test accuracy,
+their contribution are minor when generalization error is taken into account.
+
+**Variational Dropout Sparsify Deep Neural Networks** Dmitry Molchanov et al.  ICML 2017 - _Hoang_
+{: .notice}
+> Based on the literature of Sparse Bayesian Learning and the recent work on
+Variational Dropout (Kingma, 2015), the authors proposed a method to set the dropout
+parameter alpha at a high value (~1000) without destablizing the stochastic 
+gradient of the variational lower bound term. Previously, in Variational Dropout
+paper, Kingma et al. discussed that setting the dropout parapeter alpha at 
+a high value poses a difficulty in training due to the multiplicative nature
+of noise term with alpha in the gradient leading to unstability in learning. 
+Therefore, they only consider alpha less than one (equivalent with binary dropout
+probability less than 0.5). Molchanov et al. discarded this multiplicative noise 
+term and treat it as an independent variable during training. Their method
+preserve the posterior distribution while stablizing the gradient. The reason
+why they desire alpha to be large is that weights associated with large alpha
+can be set to zero without affecting the performance of the neural network.
+Furthermore, alpha now can be a parameter, not a hyperparameter any more.
+Their implementation showed that Sparse Variational Dropout leads to high
+sparsity with minor decrease in performance (CIFAR-10, CIFAR-100 datasets
+under VGG and LeNet architectures).
 
 ## <i class="fa fa-calendar"></i> May 2017
 
