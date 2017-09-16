@@ -23,6 +23,10 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> September 2017
 
+**Do Deep Convolutional Nets Really Need to be Deep and Convolutional?** Gregor Urban et al. ICLR 2017 - _Kaushalya_
+{: .notice}
+> This can be considered as a response to the NIPS 2014 paper "Do deep nets really need to be deep?" (Ba and Caruana, 2014). They train shallowe Colnvolutional Neural Networks using network distillation on an ensemble of state-of-the-art CNNs on CIFAR-10 dataset. Their results suggest that to achieve similar accuracy with a shallow student model, it should possess much more parameters than the deep teacher model (can be 30 times larger than the deep teacher model). Still the accuracy may not reach the level of the teacher model.
+
 **Understanding Deep Learning Requires Re-Thinking Generalization** Chiyuan Zhang et al. ICLR 2016 - _Hoang_
 {: .notice}
 > Experimental results and insight for generalization error in deep neural networks.
