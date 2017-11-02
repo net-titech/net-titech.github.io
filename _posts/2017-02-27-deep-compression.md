@@ -21,6 +21,24 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
+## <i class="fa fa-calendar"></i> November 2017
+
+**Variational Boosting: Iteratively Refining Posterior Approximation** Andrew C. Miller et al. ICML 2017 - _Hoang_
+{: .notice}
+> By applying the concept of boosting to variational method of posterior
+approximation, the author proposed to iteratively add new terms into the
+variational objective. This idea can be understood as using a mixture of
+distribution to increase the flexibility of the approximator. As we add more
+terms, the appoximation gets more accurate. Note that we can allow the 
+appoximator to be artitarily flexible without worring about overfitting 
+(Bishop book). The paper also provide discussion on how to perform the
+_reparameterization trick_ under the new model. Due to the changes in the
+objective fucntions themselves, the authors only provide experimental 
+results on some conjugate models and a simple Bayesian Neural Network.
+The dataset in use is the baseball dataset and some other high dimensional
+distribtion. The future work includes approximation guarantees of VBoost
+and applying natural gradient updates to VBoost.
+
 ## <i class="fa fa-calendar"></i> September 2017
 
 **Do Deep Convolutional Nets Really Need to be Deep and Convolutional?** Gregor Urban et al. ICLR 2017 - _Kaushalya_
