@@ -23,6 +23,13 @@ To compress a neural network, currently there are several approaches:
 
 ## <i class="fa fa-calendar"></i> November 2017
 
+**Compression-aware Training of Deep Networks** . Alvarez and Salzmann. NIPS 2017 - _Kaushalya_
+{: .notice}
+> This paper introduces a regularization term which encourages the parameter matrix of each layer to have low rank while training, thus improving low rank decomposition based compression techniques. Since explicitly minimizing the rank of a matrix is NP-hard, regularization term uses nuclear norm instead. Where, the nuclear norm is defined as summation of singular values of parameter matrix of a layer. In addition, group Lasso regularization term is introduced to reduce the number pf parameters further. Experiments of this paper are limited to _DecomposeMe_ network architecture, in which each convolutional layer is decomposed into two 1D kernels. Even though it is claimed that a decomposed ResNet-50 network is also used, the results are not reported in the paper.
+
+
+## <i class="fa fa-calendar"></i> November 2017
+
 **Variational Boosting: Iteratively Refining Posterior Approximation** Andrew C. Miller et al. ICML 2017 - _Hoang_
 {: .notice}
 > By applying the concept of boosting to variational method of posterior
