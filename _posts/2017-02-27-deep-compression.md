@@ -21,7 +21,7 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
-## <i class="fa fa-calendar"></i> November 2017
+## <i class="fa fa-calendar"></i> December 2017
 
 **Compression-aware Training of Deep Networks** . Alvarez and Salzmann. NIPS 2017 - _Kaushalya_
 {: .notice}
