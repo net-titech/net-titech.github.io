@@ -21,6 +21,13 @@ To compress a neural network, currently there are several approaches:
 5. Graph Embedding (incl. graph summarization).
 6. Small or new architectures.
 
+## <i class="fa fa-calendar"></i> January 2018
+
+**Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon** Xin Dong et al. NIPS 2017 - _Arie_
+{: .notice}
+> This paper propose a pruning method, called L-OBS framework, to prune parameters of CNN based on second order derivatives information of the layer-wise error function and provided a theoretical guarantee on the overall error in terms of the reconstructed errors for each layer. Instead of using diagonally restricted Hessian matrix as introduced in Optimal Brain Damage (Yann LeCun, NIPS 1989), they use of the full Hessian matrix for pruning as in Optimal Brain Surgeon (Hassibi, NIPS 1993). They claimed a proof of performance drop in CNN is bounded by sum of reconstructed error for each layer. First, for each layer, they calculate full Hessian matrix and its pseudo inverse. Second, they compute sensitivity score of each parameters which its deletion minimizing the layer error function. The minimization function then approximated by Taylor series expantion to accelerate the computation. Parameters with the smallest sensitivity scores are then pruned away. Evaluated on AlexNet, L-OBS claimed to achieve 11% compression ratio (compared with 5% by DNS) but with less iteration required for re-training. 
+
+
 ## <i class="fa fa-calendar"></i> December 2017
 
 **Compression-aware Training of Deep Networks** . Alvarez and Salzmann. NIPS 2017 - _Kaushalya_
@@ -29,6 +36,11 @@ To compress a neural network, currently there are several approaches:
 
 
 ## <i class="fa fa-calendar"></i> November 2017
+
+**Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights** Aojun Zhou et al. ICLR 2017 - _Arie_
+{: .notice}
+> This paper propose an inceremental network quantization (INQ) to convert pre-trained full-precision CNN model into a low-precision version whose weights are constrained to be either powers of two or zero. INQ consists of three interdependent operations: weight partition, group-wise quantization and re-training. At first, weight matrices are divided into two equal parts: the first group, which are quantized by a variable-length encoding, are responsible to form a low-precision base; the second group are responsible to compensate for the accuracy loss from the quantization, thus they are the ones to be re-trained. Combined with DNS pruning method (Guo et al., 2016), a 3 bit INQ is claimed to achieve 89x compression ratio on AlexNet with very low top-1 and top-5 accuracy loss.  
+
 
 **Variational Boosting: Iteratively Refining Posterior Approximation** Andrew C. Miller et al. ICML 2017 - _Hoang_
 {: .notice}
