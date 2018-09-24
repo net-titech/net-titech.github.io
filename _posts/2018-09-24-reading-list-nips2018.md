@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Complex Networks Papers - NIPS 2018
-excerpt: "List of papers accepted to NIPS 2018 on complex networks and graph machine learning."
+excerpt: "List of papers accepted to NIPS 2018 on complex networks and machine learning on graphs."
 categories: [Complex Networks]
 comments: true
 share: false
 pinned: true
 icon: fa-list
 ---
+
+Complete list of accepted papers on [nips.cc](https://nips.cc/Conferences/2018/Schedule).
 
 **1. M-Walk: Learning to Walk in Graph with Monte Carlo Tree Search**  [[Arxiv]](https://arxiv.org/abs/1802.04394)
 {: .notice}
