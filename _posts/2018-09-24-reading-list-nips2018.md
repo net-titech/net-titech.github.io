@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex Networks Papers - NIPS 2018
-excerpt: "List of papers accepted to NIPS 2018 on complex networks and machine learning on graphs."
+title: Complex Networks Papers - NeurIPS 2018
+excerpt: "List of papers accepted to NeurIPS 2018 on complex networks and machine learning on graphs."
 categories: [Complex Networks]
 comments: true
 share: false
@@ -9,7 +9,7 @@ pinned: true
 icon: fa-list
 ---
 
-Complete list of accepted papers on [nips.cc](https://nips.cc/Conferences/2018/Schedule).
+[Link to the proceedings](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018).
 
 **1. M-Walk: Learning to Walk in Graph with Monte Carlo Tree Search**  [[Arxiv]](https://arxiv.org/abs/1802.04394)
 {: .notice}
@@ -17,7 +17,7 @@ Complete list of accepted papers on [nips.cc](https://nips.cc/Conferences/2018/S
 **2. Beyond Grids: Learning Graph Representations for Visual Recognition**
 {: .notice}
 
-**3. Mean-field theory of graph neural networks in graph partitioning**
+**3. Mean-field theory of graph neural networks in graph partitioning** [[NeurIPS]](https://papers.nips.cc/paper/7689-mean-field-theory-of-graph-neural-networks-in-graph-partitioning)
 {: .notice}
 >AIST and Kabashima lab, Titech
 
