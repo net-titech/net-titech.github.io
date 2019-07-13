@@ -6,7 +6,7 @@
 title: Complex Network Research Group (Murata Lab)
 email: 
 description: Common resources for Murata Lab members.
-url: 
+url: https://muratalab.ml
 
 
 #
@@ -68,5 +68,8 @@ owner:
   500px: 
   codepen:
 
-gems:
+plugins:
     - jekyll-redirect-from
+
+exclude:
+    - tags
